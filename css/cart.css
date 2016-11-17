@@ -1,0 +1,336 @@
+body{
+	background:#f5f5f5;
+}
+
+.jd_topbar{
+	position: static;
+}
+/* 安全提示 */
+.jd_safeTip{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 13px;
+	text-align: center;
+	position: relative;
+	background: #fff;
+	border-bottom: 1px solid #c0c0c0;
+}
+.jd_safeTip p{
+	width: 240px;
+	padding-left: 25px;
+	display: inline-block;
+	position: relative;
+}
+.jd_safeTip p::before{
+	content:'';
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url("../images/safe_icon.png") no-repeat;
+	background-size: 18px 18px;
+	position: absolute;
+	left: 0;
+	top: 8px;
+
+}
+
+
+/* 公用的复选框 */
+.jd_check_box{
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: url("../images/shop-icon.png") no-repeat;
+	background-size: 50px 100px;
+	background-position: 0 0;
+}
+.jd_check_box[checked]{
+	background-position: -25px 0;
+}
+/* 店铺tit */
+.jd_shop{
+	margin-top: 10px;
+	background: #fff;
+}
+.last_shop{
+	margin-bottom: 62px;
+}
+.jd_shop .jd_shop_title{
+	height: 36px;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+}
+.jd_shop .jd_shop_title .tit_check{
+	width: 40px; 
+	height: 35px;	
+	position: absolute;
+}
+.jd_shop .jd_shop_title .tit_check .jd_check_box{
+	position: absolute;
+	top: 7px;
+	left: 10px;
+}
+.jd_shop .jd_shop_title .tit_name{
+	float: left;
+	padding-left: 40px;
+	margin-top: 8px;
+
+}
+.jd_shop .jd_shop_title .tit_name .shop_logo{
+	width: 15px;
+	height: 13px;
+	display: block;
+	float: left;
+	margin-top: 3px;
+	margin-right: 6px;
+}
+.jd_shop .jd_shop_title .tit_name .shop_name{
+	float: left;
+	font-size: 13px;
+	margin-left:10px; 
+}
+.jd_shop .jd_shop_title .tip{
+	float: right;
+	color: #d8505c;
+	line-height: 35px;
+	margin-right: 10px;
+}
+/* 商品 */	
+.jd_shop .jd_shop_con{
+	border-bottom: 1px solid #e0e0e0;
+	position: relative;
+	padding-bottom: 10px;
+}
+.jd_shop .jd_shop_con .con_check{
+	position: absolute;
+	width: 40px;
+	top: 0;
+	left: 0;
+}
+.jd_shop .jd_shop_con .con_check .jd_check_box{
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+.jd_shop .jd_shop_con .con_product{
+	margin-top: 10px;
+	padding-left: 40px;
+	padding-right: 10px; 
+}
+.jd_shop .jd_shop_con .con_product .con_product_img{
+	float: left;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+	display: block;
+}
+.jd_shop .jd_shop_con .con_product .con_product_img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box{
+	float: left;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .name{
+	/* width: 100%; */
+	height: 30px;
+	line-height: 15px;
+	font-size: 13px;
+	display: block;
+	overflow: hidden;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .price{
+	margin-top: 5px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option{
+
+}
+
+.jd_shop .jd_shop_con .con_product .con_product_box .option .subtract{
+	width: 32px;
+	height: 24px;
+	border: 1px solid #c0c0c0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option input{
+	width: 32px;
+	height: 24px;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	display: block;
+	float: left;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option .add{
+	width: 32px;
+	height: 24px;
+	border: 1px solid #c0c0c0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option .delete_box{
+	float: right;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option .delete_box .delete_top{
+	width: 20px;
+	height: 5px;
+	background: url("../images/delete_up.png") no-repeat;
+	background-size: 20px 5px;
+	margin-left: -1px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .option .delete_box .delete_bot{
+	width: 18px;
+	height: 18px;
+	background: url("../images/delete_down.png") no-repeat;
+	background-size: 18px 18px;
+	margin-top: -3px;
+}
+
+/* 金额操作 */
+.jd_amount{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 62px;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+}
+.jd_amount .amount_check{
+	position: absolute;
+	width: 70px;
+	line-height: 62px;
+	padding-left: 35px;
+}
+.jd_amount .amount_check .jd_check_box{
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+.jd_amount .amount_info{
+	padding-left: 70px;
+	padding-right: 120px;
+	height: 62px;
+	line-height: 25px;
+	padding-top: 5px;
+}
+.jd_amount .amount_info .sum{
+	font-size: 16px;
+}
+.jd_amount .amount_info .other{
+	font-size: 10px;
+}
+.jd_amount .amount_submit{
+	padding: 0 20px;
+	height: 62px;
+	width: 120px;
+	text-align: center;
+	line-height: 62px;
+	color: #fff;
+	background: #d8505c;
+	font-size: 16px;
+	position: absolute; 
+	top: 0;
+	right: 0;
+}
+.jd_amount .amount_submit span{
+	font-size: 12px;
+}
+
+/* 弹出框 */
+.jd_alert{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.jd_alert .jd_alert_box{
+	width: 80%;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 0 20px 10px;
+	margin: 40% auto;
+}
+.jd_alert .jd_alert_box .jd_alert_text{
+	line-height: 75px;
+	color: #666;
+	text-align: center;
+}
+.jd_alert .jd_alert_box .jd_btn_box .cancel{
+	display: block;
+	width: 45%;
+	height: 36px;
+	float: left;
+	margin-right: 10%;
+	background:#fff;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	color: #888;
+	border-radius: 4px;
+}
+.jd_alert .jd_alert_box .jd_btn_box .submit{
+	display: block;
+	width: 45%;
+	height: 36px;
+	float: left;
+	background: #d8505c;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 4px;
+}
+
+/* 弹出动画 */
+@-webkit-keyframes jumpOut{
+	0%{
+		opacity: 0;
+		transform: translateY(-1000px);
+		-webkit-transform: translateY(-1000px);
+	}
+	60%{
+		opacity: 1;
+		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+	}
+	75%{
+		opacity: 1;
+		transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+	}
+	90%{
+		opacity: 1;
+		transform: translateY(5px);
+		-webkit-transform: translateY(5px);
+	}
+	100%{
+		opacity: 1;
+		transform: none;
+		-webkit-transform: none;
+	}
+}
+
+.jumpOut {
+	animation: jumpOut 1s ease;
+}
+
+
+
+
